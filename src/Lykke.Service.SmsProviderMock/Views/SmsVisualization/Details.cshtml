@@ -1,0 +1,20 @@
+﻿@model Lykke.Service.SmsProviderMock.Domain.Entities.ISms
+
+<h1>
+    @Model.PhoneNumber
+</h1>
+<div>
+    @Model.Timestamp
+</div>
+<p>
+    @Html.Raw(@Model.Message)
+</p>
+
+<a onclick="history.go(-1); return false;" href="#">Back</a><br />
+
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>

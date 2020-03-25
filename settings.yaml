@@ -1,0 +1,20 @@
+SmsProviderMockService:
+    Db:
+        LogsConnString:
+            settings-key: SmsProviderMockService-LogsConnString
+            types:
+              - AzureTableStorage
+        DataConnString:
+            settings-key: SmsProviderMockService-DataConnString
+SlackNotifications:
+    AzureQueue:
+        ConnectionString:
+            settings-key: SlackNotificationsConnString
+            types:
+                - AzureTableStorage
+        QueueName:
+            settings-key: SlackQueueName
+MonitoringServiceClient:
+    MonitoringServiceUrl:
+        settings-key: MonitoringServiceUrl
+
