@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lykke.Service.SmsProviderMock.Domain\Lykke.Service.SmsProviderMock.Domain.csproj" />
+    <ProjectReference Include="..\MAVN.Service.SmsProviderMock.Domain\MAVN.Service.SmsProviderMock.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
