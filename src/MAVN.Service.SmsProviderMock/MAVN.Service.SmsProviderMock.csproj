@@ -29,9 +29,9 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\client\Lykke.Service.SmsProviderMock.Client\Lykke.Service.SmsProviderMock.Client.csproj" />
-    <ProjectReference Include="..\Lykke.Service.SmsProviderMock.Domain\Lykke.Service.SmsProviderMock.Domain.csproj" />
-    <ProjectReference Include="..\Lykke.Service.SmsProviderMock.DomainServices\Lykke.Service.SmsProviderMock.DomainServices.csproj" />
-    <ProjectReference Include="..\Lykke.Service.SmsProviderMock.MsSqlRepositories\Lykke.Service.SmsProviderMock.MsSqlRepositories.csproj" />
+    <ProjectReference Include="..\..\client\MAVN.Service.SmsProviderMock.Client\MAVN.Service.SmsProviderMock.Client.csproj" />
+    <ProjectReference Include="..\MAVN.Service.SmsProviderMock.Domain\MAVN.Service.SmsProviderMock.Domain.csproj" />
+    <ProjectReference Include="..\MAVN.Service.SmsProviderMock.DomainServices\MAVN.Service.SmsProviderMock.DomainServices.csproj" />
+    <ProjectReference Include="..\MAVN.Service.SmsProviderMock.MsSqlRepositories\MAVN.Service.SmsProviderMock.MsSqlRepositories.csproj" />
   </ItemGroup>
 </Project>

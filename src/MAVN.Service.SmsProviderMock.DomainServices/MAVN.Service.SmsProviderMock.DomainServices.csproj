@@ -7,6 +7,6 @@
     <PackageReference Include="AutoMapper" Version="9.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lykke.Service.SmsProviderMock.Domain\Lykke.Service.SmsProviderMock.Domain.csproj" />
+    <ProjectReference Include="..\MAVN.Service.SmsProviderMock.Domain\MAVN.Service.SmsProviderMock.Domain.csproj" />
   </ItemGroup>
 </Project>

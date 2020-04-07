@@ -17,7 +17,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\client\Lykke.Service.SmsProviderMock.Client\Lykke.Service.SmsProviderMock.Client.csproj" />
-    <ProjectReference Include="..\..\src\Lykke.Service.SmsProviderMock\Lykke.Service.SmsProviderMock.csproj" />
+    <ProjectReference Include="..\..\client\MAVN.Service.SmsProviderMock.Client\MAVN.Service.SmsProviderMock.Client.csproj" />
+    <ProjectReference Include="..\..\src\MAVN.Service.SmsProviderMock\MAVN.Service.SmsProviderMock.csproj" />
   </ItemGroup>
 </Project>
