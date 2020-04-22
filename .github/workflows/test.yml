@@ -28,4 +28,4 @@ jobs:
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: ./tests/MAVN.Service.SMSProviderMock.Tests/TestResults/coverage.info 
+        path-to-lcov: ./tests/MAVN.Service.SmsProviderMock.Tests/TestResults/coverage.info 

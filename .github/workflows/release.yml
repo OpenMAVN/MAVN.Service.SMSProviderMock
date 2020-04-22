@@ -11,12 +11,12 @@ env:
   RELEASE_JOB: false
   RELEASE_SERVICE: true
   
-  CLIENT_PROJECT: ./client/MAVN.Service.SMSProviderMock.Client/MAVN.Service.SMSProviderMock.Client.csproj
-  CONTRACT_PROJECT: ./contract/MAVN.Service.SMSProviderMock.Contract/MAVN.Service.SMSProviderMock.Contract.csproj
+  CLIENT_PROJECT: ./client/MAVN.Service.SmsProviderMock.Client/MAVN.Service.SmsProviderMock.Client.csproj
+  CONTRACT_PROJECT: ./contract/MAVN.Service.SmsProviderMock.Contract/MAVN.Service.SmsProviderMock.Contract.csproj
   JOB_DOCKER_IMAGE:
   JOB_PROJECT:
   SERVICE_DOCKER_IMAGE: sms-provider-mock-service
-  SERVICE_PROJECT: ./src/MAVN.Service.SMSProviderMock/MAVN.Service.SMSProviderMock.csproj
+  SERVICE_PROJECT: ./src/MAVN.Service.SmsProviderMock/MAVN.Service.SmsProviderMock.csproj
     
   
         
