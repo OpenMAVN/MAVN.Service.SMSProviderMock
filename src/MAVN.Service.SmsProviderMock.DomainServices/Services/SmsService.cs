@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Common.Log;
 using Lykke.Common.Log;
-using Lykke.Service.SmsProviderMock.Domain.Models;
-using Lykke.Service.SmsProviderMock.Domain.Repositories;
-using Lykke.Service.SmsProviderMock.Domain.Services;
+using MAVN.Service.SmsProviderMock.Domain.Models;
+using MAVN.Service.SmsProviderMock.Domain.Repositories;
+using MAVN.Service.SmsProviderMock.Domain.Services;
 
-namespace Lykke.Service.SmsProviderMock.DomainServices.Services
+namespace MAVN.Service.SmsProviderMock.DomainServices.Services
 {
     public class SmsService : ISmsService
     {

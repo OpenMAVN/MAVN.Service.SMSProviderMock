@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Common.Log;
 using Lykke.Common.Log;
 using Lykke.Common.MsSql;
-using Lykke.Service.SmsProviderMock.Domain.Entities;
-using Lykke.Service.SmsProviderMock.Domain.Models;
-using Lykke.Service.SmsProviderMock.Domain.Repositories;
-using Lykke.Service.SmsProviderMock.MsSqlRepositories.Entities;
+using MAVN.Service.SmsProviderMock.Domain.Entities;
+using MAVN.Service.SmsProviderMock.Domain.Models;
+using MAVN.Service.SmsProviderMock.Domain.Repositories;
+using MAVN.Service.SmsProviderMock.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lykke.Service.SmsProviderMock.MsSqlRepositories.Repositories
+namespace MAVN.Service.SmsProviderMock.MsSqlRepositories.Repositories
 {
     public class SmsRepository : ISmsRepository
     {

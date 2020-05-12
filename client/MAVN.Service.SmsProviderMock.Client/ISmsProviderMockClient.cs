@@ -1,6 +1,6 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 
-namespace Lykke.Service.SmsProviderMock.Client
+namespace MAVN.Service.SmsProviderMock.Client
 {
     /// <summary>
     /// SmsProviderMock client interface.

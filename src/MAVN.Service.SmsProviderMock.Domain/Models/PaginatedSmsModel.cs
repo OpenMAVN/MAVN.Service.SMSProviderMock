@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Lykke.Service.SmsProviderMock.Domain.Entities;
+using MAVN.Service.SmsProviderMock.Domain.Entities;
 
-namespace Lykke.Service.SmsProviderMock.Domain.Models
+namespace MAVN.Service.SmsProviderMock.Domain.Models
 {
     public class PaginatedSmsModel
     {

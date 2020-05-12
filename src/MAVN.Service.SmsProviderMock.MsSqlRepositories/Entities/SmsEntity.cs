@@ -1,9 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Lykke.Service.SmsProviderMock.Domain.Entities;
+using MAVN.Service.SmsProviderMock.Domain.Entities;
 
-namespace Lykke.Service.SmsProviderMock.MsSqlRepositories.Entities
+namespace MAVN.Service.SmsProviderMock.MsSqlRepositories.Entities
 {
     [Table("sms")]
     public class SmsEntity : ISms

@@ -1,9 +1,9 @@
 using AutoMapper;
-using Lykke.Service.SmsProviderMock.Client.Models;
-using Lykke.Service.SmsProviderMock.Domain.Entities;
-using Lykke.Service.SmsProviderMock.Domain.Models;
+using MAVN.Service.SmsProviderMock.Client.Models;
+using MAVN.Service.SmsProviderMock.Domain.Entities;
+using MAVN.Service.SmsProviderMock.Domain.Models;
 
-namespace Lykke.Service.SmsProviderMock.Profiles
+namespace MAVN.Service.SmsProviderMock.Profiles
 {
     public class ServiceProfile : Profile
     {

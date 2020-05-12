@@ -1,6 +1,6 @@
 using Lykke.SettingsReader.Attributes;
 
-namespace Lykke.Service.SmsProviderMock.Client 
+namespace MAVN.Service.SmsProviderMock.Client 
 {
     /// <summary>
     /// SmsProviderMock client settings.

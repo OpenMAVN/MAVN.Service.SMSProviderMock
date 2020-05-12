@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Lykke.Service.SmsProviderMock.Domain.Entities;
-using Lykke.Service.SmsProviderMock.Domain.Models;
+using MAVN.Service.SmsProviderMock.Domain.Entities;
+using MAVN.Service.SmsProviderMock.Domain.Models;
 
-namespace Lykke.Service.SmsProviderMock.Domain.Repositories
+namespace MAVN.Service.SmsProviderMock.Domain.Repositories
 {
     public interface ISmsRepository
     {

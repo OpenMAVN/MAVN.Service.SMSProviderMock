@@ -1,13 +1,13 @@
 using Autofac;
 using JetBrains.Annotations;
 using Lykke.Common.MsSql;
-using Lykke.Service.SmsProviderMock.Domain.Repositories;
-using Lykke.Service.SmsProviderMock.MsSqlRepositories;
-using Lykke.Service.SmsProviderMock.MsSqlRepositories.Repositories;
-using Lykke.Service.SmsProviderMock.Settings;
 using Lykke.SettingsReader;
+using MAVN.Service.SmsProviderMock.Domain.Repositories;
+using MAVN.Service.SmsProviderMock.MsSqlRepositories;
+using MAVN.Service.SmsProviderMock.MsSqlRepositories.Repositories;
+using MAVN.Service.SmsProviderMock.Settings;
 
-namespace Lykke.Service.SmsProviderMock.Modules
+namespace MAVN.Service.SmsProviderMock.Modules
 {
     [UsedImplicitly]
     public class DataLayerModule : Module

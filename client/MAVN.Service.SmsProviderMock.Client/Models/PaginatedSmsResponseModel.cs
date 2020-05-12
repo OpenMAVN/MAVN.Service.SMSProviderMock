@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
 
-namespace Lykke.Service.SmsProviderMock.Client.Models
+namespace MAVN.Service.SmsProviderMock.Client.Models
 {
     /// <summary>
     /// Gives the List of Sms on the desired Page and information about the Page

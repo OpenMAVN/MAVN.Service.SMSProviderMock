@@ -1,10 +1,10 @@
+using System;
 using Autofac;
 using JetBrains.Annotations;
 using Lykke.HttpClientGenerator;
 using Lykke.HttpClientGenerator.Infrastructure;
-using System;
 
-namespace Lykke.Service.SmsProviderMock.Client
+namespace MAVN.Service.SmsProviderMock.Client
 {
     /// <summary>
     /// Extension for client registration
@@ -30,7 +30,7 @@ namespace Lykke.Service.SmsProviderMock.Client
             if (string.IsNullOrWhiteSpace(settings.ServiceUrl))
                 throw new ArgumentException("Value cannot be null or whitespace.", nameof(SmsProviderMockServiceClientSettings.ServiceUrl));
 
-            var clientBuilder = HttpClientGenerator.HttpClientGenerator.BuildForUrl(settings.ServiceUrl)
+            var clientBuilder = Lykke.HttpClientGenerator.HttpClientGenerator.BuildForUrl(settings.ServiceUrl)
                 .WithAdditionalCallsWrapper(new ExceptionHandlerCallsWrapper());
 
             clientBuilder = builderConfigure?.Invoke(clientBuilder) ?? clientBuilder.WithoutRetries();

@@ -1,6 +1,6 @@
 using System;
 
-namespace Lykke.Service.SmsProviderMock.Domain.Entities
+namespace MAVN.Service.SmsProviderMock.Domain.Entities
 {
     public interface ISms
     {

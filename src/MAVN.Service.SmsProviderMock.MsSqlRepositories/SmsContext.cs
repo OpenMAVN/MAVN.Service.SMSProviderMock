@@ -1,10 +1,10 @@
 using System.Data.Common;
 using JetBrains.Annotations;
 using Lykke.Common.MsSql;
-using Lykke.Service.SmsProviderMock.MsSqlRepositories.Entities;
+using MAVN.Service.SmsProviderMock.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lykke.Service.SmsProviderMock.MsSqlRepositories
+namespace MAVN.Service.SmsProviderMock.MsSqlRepositories
 {
     public class SmsContext : MsSqlContext
     {

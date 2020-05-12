@@ -1,6 +1,6 @@
 using JetBrains.Annotations;
 
-namespace Lykke.Service.SmsProviderMock.Settings
+namespace MAVN.Service.SmsProviderMock.Settings
 {
     [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
     public class SmsProviderMockSettings

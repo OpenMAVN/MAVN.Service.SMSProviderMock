@@ -3,12 +3,12 @@ using AutoMapper;
 using JetBrains.Annotations;
 using Lykke.Common.ApiLibrary.Filters;
 using Lykke.Sdk;
-using Lykke.Service.SmsProviderMock.Profiles;
-using Lykke.Service.SmsProviderMock.Settings;
+using MAVN.Service.SmsProviderMock.Profiles;
+using MAVN.Service.SmsProviderMock.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Lykke.Service.SmsProviderMock
+namespace MAVN.Service.SmsProviderMock
 {
     [UsedImplicitly]
     public class Startup

@@ -1,8 +1,8 @@
 using Autofac;
-using Lykke.Service.SmsProviderMock.Domain.Services;
-using Lykke.Service.SmsProviderMock.DomainServices.Services;
+using MAVN.Service.SmsProviderMock.Domain.Services;
+using MAVN.Service.SmsProviderMock.DomainServices.Services;
 
-namespace Lykke.Service.SmsProviderMock.DomainServices
+namespace MAVN.Service.SmsProviderMock.DomainServices
 {
     public class AutofacModule : Module
     {

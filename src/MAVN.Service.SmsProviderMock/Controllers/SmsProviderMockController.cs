@@ -1,20 +1,20 @@
-using System;
+﻿using System;
 using System.Net;
 using System.Threading.Tasks;
 using AutoMapper;
-using Lykke.Service.NotificationSystemBroker.SmsProviderClient;
-using Lykke.Service.NotificationSystemBroker.SmsProviderClient.Enums;
-using Lykke.Service.SmsProviderMock.Client;
-using Lykke.Service.SmsProviderMock.Client.Models;
-using Lykke.Service.SmsProviderMock.Domain.Services;
+using MAVN.Service.NotificationSystemBroker.SmsProviderClient;
+using MAVN.Service.NotificationSystemBroker.SmsProviderClient.Enums;
+using MAVN.Service.SmsProviderMock.Client;
+using MAVN.Service.SmsProviderMock.Client.Models;
+using MAVN.Service.SmsProviderMock.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Lykke.Service.SmsProviderMock.Controllers
+namespace MAVN.Service.SmsProviderMock.Controllers
 {
     [Route("/api/")]
     [ApiController]
-    public class SmsProviderMockController : Controller, ISmsProviderMockApi, ISmsProvider
+    public class SmsProviderMockController : Controller, ISmsProviderMockApi, ISmsProviderApi
     {
         private readonly ISmsService _smsService;
         private readonly IMapper _mapper;
