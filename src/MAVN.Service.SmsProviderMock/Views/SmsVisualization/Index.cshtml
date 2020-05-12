@@ -1,4 +1,4 @@
-﻿@model List<Lykke.Service.SmsProviderMock.Domain.Entities.ISms>
+﻿@model List<MAVN.Service.SmsProviderMock.Domain.Entities.ISms>
 
 <table>
     <thead>
@@ -26,7 +26,7 @@
                 <td>@email.Message</td>
                 <td>
                     @Html.ActionLink("Details", "Details",
-                    "SmsVisualization", new { messageId = email.MessageId })
+                        "SmsVisualization", new { messageId = email.MessageId })
                 </td>
         </tr>
     }

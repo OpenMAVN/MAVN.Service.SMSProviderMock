@@ -1,12 +1,10 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Lykke.Service.SmsProviderMock.Domain.Repositories;
+using MAVN.Service.SmsProviderMock.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lykke.Service.SmsProviderMock.Controllers
+namespace MAVN.Service.SmsProviderMock.Controllers
 {
     [Route("/sentsms")]
     [ApiExplorerSettings(IgnoreApi = true)]

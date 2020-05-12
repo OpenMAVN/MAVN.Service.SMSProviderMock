@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
-using Lykke.Service.SmsProviderMock.Domain.Models;
+using MAVN.Service.SmsProviderMock.Domain.Models;
 
-namespace Lykke.Service.SmsProviderMock.Domain.Services
+namespace MAVN.Service.SmsProviderMock.Domain.Services
 {
     public interface ISmsService
     {

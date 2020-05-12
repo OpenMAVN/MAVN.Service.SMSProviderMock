@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Lykke.Service.SmsProviderMock.Client.Models
+namespace MAVN.Service.SmsProviderMock.Client.Models
 {
     /// <summary>
     /// Model used for requesting paginated data for sms

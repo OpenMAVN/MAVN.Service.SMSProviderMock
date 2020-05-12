@@ -1,6 +1,6 @@
 using Lykke.SettingsReader.Attributes;
 
-namespace Lykke.Service.SmsProviderMock.Settings
+namespace MAVN.Service.SmsProviderMock.Settings
 {
     public class DbSettings
     {

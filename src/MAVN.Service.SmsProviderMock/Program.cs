@@ -1,7 +1,7 @@
-using Lykke.Sdk;
 using System.Threading.Tasks;
+using Lykke.Sdk;
 
-namespace Lykke.Service.SmsProviderMock
+namespace MAVN.Service.SmsProviderMock
 {
     internal sealed class Program
     {

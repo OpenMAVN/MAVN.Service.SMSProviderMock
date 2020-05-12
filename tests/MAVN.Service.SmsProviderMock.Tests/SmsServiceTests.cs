@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Lykke.Logs;
-using Lykke.Service.SmsProviderMock.Domain.Entities;
-using Lykke.Service.SmsProviderMock.Domain.Models;
-using Lykke.Service.SmsProviderMock.Domain.Repositories;
-using Lykke.Service.SmsProviderMock.DomainServices.Services;
+using MAVN.Service.SmsProviderMock.Domain.Entities;
+using MAVN.Service.SmsProviderMock.Domain.Models;
+using MAVN.Service.SmsProviderMock.Domain.Repositories;
+using MAVN.Service.SmsProviderMock.DomainServices.Services;
 using Moq;
 using Xunit;
 
-namespace Lykke.Service.SmsProviderMock.Tests
+namespace MAVN.Service.SmsProviderMock.Tests
 {
     public class SmsServiceTests
     {

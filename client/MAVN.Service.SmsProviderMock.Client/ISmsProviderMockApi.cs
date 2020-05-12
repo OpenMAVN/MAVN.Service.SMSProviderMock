@@ -1,10 +1,10 @@
 using System;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
-using Lykke.Service.SmsProviderMock.Client.Models;
+using MAVN.Service.SmsProviderMock.Client.Models;
 using Refit;
 
-namespace Lykke.Service.SmsProviderMock.Client
+namespace MAVN.Service.SmsProviderMock.Client
 {
     /// <summary>
     /// SmsProviderMock client API interface.

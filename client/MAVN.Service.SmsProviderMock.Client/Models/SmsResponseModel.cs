@@ -1,6 +1,6 @@
 using System;
 
-namespace Lykke.Service.SmsProviderMock.Client.Models
+namespace MAVN.Service.SmsProviderMock.Client.Models
 {
     /// <summary>
     /// Represents an sms

@@ -1,7 +1,7 @@
-using Lykke.HttpClientGenerator;
-using Lykke.Service.NotificationSystemBroker.SmsProviderClient;
+﻿using Lykke.HttpClientGenerator;
+using MAVN.Service.NotificationSystemBroker.SmsProviderClient;
 
-namespace Lykke.Service.SmsProviderMock.Client
+namespace MAVN.Service.SmsProviderMock.Client
 {
     /// <summary>
     /// SmsProviderMock API aggregating interface.
@@ -16,7 +16,7 @@ namespace Lykke.Service.SmsProviderMock.Client
         /// <summary>
         /// Interface to SmsProvider Api.
         /// </summary>
-        public ISmsProvider Api { get; private set; }
+        public ISmsProviderApi Api { get; private set; }
 
         /// <summary>C-tor</summary>
         public SmsProviderMockClient(IHttpClientGenerator httpClientGenerator)
