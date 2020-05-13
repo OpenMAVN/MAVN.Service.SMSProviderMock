@@ -1,6 +1,6 @@
 using Autofac;
 using JetBrains.Annotations;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using Lykke.SettingsReader;
 using MAVN.Service.SmsProviderMock.Domain.Repositories;
 using MAVN.Service.SmsProviderMock.MsSqlRepositories;

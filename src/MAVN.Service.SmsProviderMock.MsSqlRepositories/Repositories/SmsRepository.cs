@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Common.Log;
 using Lykke.Common.Log;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.SmsProviderMock.Domain.Entities;
 using MAVN.Service.SmsProviderMock.Domain.Models;
 using MAVN.Service.SmsProviderMock.Domain.Repositories;
