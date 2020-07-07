@@ -1,12 +1,12 @@
-using System.Data.Common;
+﻿using System.Data.Common;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.SmsProviderMock.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MAVN.Service.SmsProviderMock.MsSqlRepositories
 {
-    public class SmsContext : MsSqlContext
+    public class SmsContext : PostgreSQLContext
     {
         private const string Schema = "sms";
 
@@ -29,7 +29,7 @@ namespace MAVN.Service.SmsProviderMock.MsSqlRepositories
         {
         }
 
-        protected override void OnLykkeModelCreating(ModelBuilder modelBuilder)
+        protected override void OnMAVNModelCreating(ModelBuilder modelBuilder)
         {
             var smsEntityBuilder = modelBuilder.Entity<SmsEntity>();
 
