@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Common.Log;
 using Lykke.Common.Log;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.SmsProviderMock.Domain.Entities;
 using MAVN.Service.SmsProviderMock.Domain.Models;
 using MAVN.Service.SmsProviderMock.Domain.Repositories;
@@ -15,10 +15,10 @@ namespace MAVN.Service.SmsProviderMock.MsSqlRepositories.Repositories
 {
     public class SmsRepository : ISmsRepository
     {
-        private readonly MsSqlContextFactory<SmsContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<SmsContext> _contextFactory;
         private readonly ILog _log;
 
-        public SmsRepository(MsSqlContextFactory<SmsContext> contextFactory, ILogFactory logFactory)
+        public SmsRepository(PostgreSQLContextFactory<SmsContext> contextFactory, ILogFactory logFactory)
         {
             _contextFactory = contextFactory;
             _log = logFactory.CreateLog(this);

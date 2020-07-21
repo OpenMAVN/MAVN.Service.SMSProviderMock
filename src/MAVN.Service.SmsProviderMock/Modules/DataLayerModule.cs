@@ -1,7 +1,7 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
 using Lykke.SettingsReader;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.SmsProviderMock.Domain.Repositories;
 using MAVN.Service.SmsProviderMock.MsSqlRepositories;
 using MAVN.Service.SmsProviderMock.MsSqlRepositories.Repositories;
@@ -21,7 +21,7 @@ namespace MAVN.Service.SmsProviderMock.Modules
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterMsSql(
+            builder.RegisterPostgreSQL(
                 _connectionString,
                 connString => new SmsContext(connString, false),
                 dbConn => new SmsContext(dbConn));

@@ -1,11 +1,15 @@
-using System;
+﻿using System;
+using Autofac;
 using AutoMapper;
 using JetBrains.Annotations;
 using Lykke.Common.ApiLibrary.Filters;
 using Lykke.Sdk;
+using Lykke.SettingsReader;
 using MAVN.Service.SmsProviderMock.Profiles;
 using MAVN.Service.SmsProviderMock.Settings;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MAVN.Service.SmsProviderMock
@@ -13,6 +17,8 @@ namespace MAVN.Service.SmsProviderMock
     [UsedImplicitly]
     public class Startup
     {
+        private IConfigurationRoot _configurationRoot;
+        private IReloadingManager<AppSettings> _settingsManager;
         private readonly LykkeSwaggerOptions _swaggerOptions = new LykkeSwaggerOptions
         {
             ApiTitle = "SmsProviderMock API",
@@ -20,9 +26,10 @@ namespace MAVN.Service.SmsProviderMock
         };
 
         [UsedImplicitly]
-        public IServiceProvider ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
-            return services.BuildServiceProvider<AppSettings>(options =>
+            services.AddMvc().AddNewtonsoftJson();
+            (_configurationRoot, _settingsManager) = services.BuildServiceProvider<AppSettings>(options =>
             {
                 options.Extend = (serviceCollection, settings) =>
                 {
@@ -38,13 +45,28 @@ namespace MAVN.Service.SmsProviderMock
                     logs.AzureTableName = "SmsProviderMockLog";
                     logs.AzureTableConnectionStringResolver = settings => settings.SmsProviderMockService.Db.LogsConnString;
                 };
+
             });
         }
 
         [UsedImplicitly]
-        public void Configure(IApplicationBuilder app, IMapper mapper)
+        public void ConfigureContainer(ContainerBuilder builder)
         {
-            app.UseLykkeConfiguration(options =>
+            {
+                builder.ConfigureLykkeContainer(
+                    _configurationRoot,
+                    _settingsManager);
+            }
+        }
+
+        [UsedImplicitly]
+        public void Configure(
+            IApplicationBuilder app,
+            IMapper mapper,
+            IApplicationLifetime appLifetime)
+        {
+            app.UseRouting().UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseLykkeConfiguration(appLifetime, options =>
             {
                 options.SwaggerOptions = _swaggerOptions;
             });
